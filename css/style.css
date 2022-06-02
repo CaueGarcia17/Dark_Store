@@ -1,0 +1,126 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes animation-capa {
+
+    0%{background-image: url(../img/capa-Tanjiro.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat;}
+    50%{background-image: url(../img/capa-Saturo\ gojo.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat;}
+    70%{background-image: url(../img/capa-Headers\ on\ behance.png); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat;}
+    100%{background-image: url(../img/capa-Dragon\ Ball\ Z.png); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat;} 
+
+}
+
+.capa{
+    animation-name: animation-capa;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation-bem-vindo {
+
+    0%{ color: rgb(255, 255, 255);}
+    50%{color: rgb(224, 224, 224);}
+    70%{color: rgb(186, 186, 186);}
+    100%{color: rgb(255, 255, 255);} 
+
+}
+
+.bem-vindo{
+
+    animation-name: animation-bem-vindo;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    background: url(../img/fundo-home.jpeg);
+    background-size: cover;
+    width: 100%;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: x-small;
+}
+
+nav:hover{
+    transition: 0.6s;
+}
+
+li:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+}
+
+nav, .logo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: brown;
+    color: white;
+}
+
+nav, ul, li{
+    display: inline-flex;
+    text-decoration: none;
+
+}
+
+li, a{
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+
+/*CONTAINER DOS SLIDES E PRODUTOS*/
+
+.conteudo-site{
+
+    margin-top: 5%;
+}
+
+.produtos{
+
+    justify-content: space-around;
+    display: flex;
+
+}
+
+h2{
+    color: aliceblue;
+    font-size: 25px;
+
+}
+
+h3{
+    color: blueviolet;
+    font-size: 21px;
+}
+
+.camisa-1{
+
+    padding: 8px;
+    border: solid 2px white;
+    object-fit: cover;
+    overflow: covre;
+
+}
+
+/*PÁGINAS DAS CAMISAS*/
+
+.pagina-camisa-1{
+    text-align: center;
+}
